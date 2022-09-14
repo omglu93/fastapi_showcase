@@ -1,5 +1,4 @@
 from os import getenv
-import os
 from typing import Optional, Any
 from dotenv import load_dotenv
 from pydantic import BaseSettings, \

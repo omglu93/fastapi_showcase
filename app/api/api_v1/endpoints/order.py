@@ -17,4 +17,3 @@ def create_new_user(*,
                     order_in: CustomerOrderCreate) -> Any:
 
     return orders.create(db, obj_in=order_in).__dict__
-

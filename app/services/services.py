@@ -1,11 +1,12 @@
 import os
 
 
-def is_prime(n):
-    for i in range(2, n):
-        if (n % i) == 0:
-            return True
-    return False
+def cpu_intensive_operations(i: int):
+    n = 0
+    while n < i:
+        n += 1
+
+    return n
 
 
 def io_operation():

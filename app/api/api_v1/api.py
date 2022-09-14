@@ -5,6 +5,6 @@ from app.api.api_v1.endpoints.order import order_router
 
 router = APIRouter()
 
-router.include_router(calc_router, prefix="/prime")
+router.include_router(calc_router, prefix="/cpu-operation")
 router.include_router(io_router, prefix="/io-operation")
 router.include_router(order_router, prefix="/database-operation")

@@ -1,13 +1,13 @@
 from pydantic import BaseModel
 
 
-class PrimeRequestInner(BaseModel):
+class CPURequestInner(BaseModel):
     number: int
 
 
-class PrimeRequest(BaseModel):
-    data: PrimeRequestInner
+class CPURequest(BaseModel):
+    data: CPURequestInner
 
 
-class PrimeResponse(BaseModel):
-    bool: bool
+class CPUResponse(BaseModel):
+    results: int
