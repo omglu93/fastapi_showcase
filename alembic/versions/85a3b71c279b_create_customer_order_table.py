@@ -21,7 +21,7 @@ def upgrade() -> None:
     op.create_table('customerorders',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('customer_name', sa.String(length=50), nullable=False),
-    sa.Column('item', sa.Integer(), nullable=False),
+    sa.Column('item', sa.String(length=50), nullable=False),
     sa.Column('cost', sa.Float(), nullable=False),
     sa.Column('order_status', sa.Integer(), nullable=False),
     sa.PrimaryKeyConstraint('id')

@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class CustomerOrderCreate(BaseModel):
     customer_name: str
-    item: int
+    item: str
     cost: float
 
     class Config:
